@@ -1,0 +1,17 @@
+## Music application using React Native
+
+#### Tech stack
+
+- Frontend
+
+  - React Native
+  - Tailwind or Material UI
+
+- Backend
+  - Nothing yet
+
+#### Launch tutorial
+
+- Download repository
+- Use `yarn web`, `yarn android` or `yarn ios` (web is recommended)
+- Use Expo application to scan the QR code on the screen or input localhost URL
