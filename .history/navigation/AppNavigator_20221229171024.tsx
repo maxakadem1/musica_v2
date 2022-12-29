@@ -15,4 +15,13 @@ const AppStackNavigator = createAppContainer(
   })
 );
 
-export default AppStackNavigator;
+const AppNavigator = createSwitchNavigator({
+  Home: {
+    screen: HomeScreen,
+  },
+  Other: {
+    screen: OtherScreen,
+  },
+});
+
+export default AppNavigator;
