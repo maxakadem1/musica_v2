@@ -28,16 +28,18 @@ import { Text, View } from "react-native";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
+  const colorScheme = useColorScheme();
 
   if (!isLoadingComplete) {
     return null;
   } else {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>blank application</Text>
+        <Text style={styles.text}>poopie poopss</Text>
         <Button
-          title="button text goes here"
+          title="button text"
           onPress={() => console.log("Button pressed!")}
+          style={styles.button}
         ></Button>
 
         {/* makes status bar color different */}

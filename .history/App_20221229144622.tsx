@@ -28,6 +28,7 @@ import { Text, View } from "react-native";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
+  const colorScheme = useColorScheme();
 
   if (!isLoadingComplete) {
     return null;
@@ -41,7 +42,7 @@ export default function App() {
         ></Button>
 
         {/* makes status bar color different */}
-        <StatusBar style="auto" />
+        <StatusBar style="black" />
       </View>
     );
   }

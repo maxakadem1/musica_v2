@@ -28,6 +28,7 @@ import { Text, View } from "react-native";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
+  const colorScheme = useColorScheme();
 
   if (!isLoadingComplete) {
     return null;
@@ -36,7 +37,7 @@ export default function App() {
       <View style={styles.container}>
         <Text style={styles.text}>blank application</Text>
         <Button
-          title="button text goes here"
+          title="button text"
           onPress={() => console.log("Button pressed!")}
         ></Button>
 

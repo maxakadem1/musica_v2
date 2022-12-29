@@ -7,8 +7,6 @@ import Navigation from "./navigation";
 
 import { Button } from "react-native";
 import styles from "./constants/Styles";
-import React from "react";
-import { Text, View } from "react-native";
 
 // export default function App() {
 //   const isLoadingComplete = useCachedResources();
@@ -28,21 +26,16 @@ import { Text, View } from "react-native";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
+  const colorScheme = useColorScheme();
 
   if (!isLoadingComplete) {
     return null;
   } else {
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>blank application</Text>
-        <Button
-          title="button text goes here"
-          onPress={() => console.log("Button pressed!")}
-        ></Button>
-
-        {/* makes status bar color different */}
-        <StatusBar style="auto" />
-      </View>
+      <SafeAreaProvider>
+        <Navigation colorScheme={colorScheme} />
+        <StatusBar />
+      </SafeAreaProvider>
     );
   }
 }

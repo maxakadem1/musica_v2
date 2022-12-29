@@ -28,6 +28,7 @@ import { Text, View } from "react-native";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
+  const colorScheme = useColorScheme();
 
   if (!isLoadingComplete) {
     return null;
