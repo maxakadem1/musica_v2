@@ -6,13 +6,13 @@ interface Props {
   navigation: NavigationStackProp<{}>;
 }
 
-export default function OtherScreen({ navigation }: Props) {
+export default function HomeScreen({ navigation }: Props) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Other Screen</Text>
+      <Text>Home Screen</Text>
       <Button
         title="Go to Other Screen"
-        onPress={() => navigation.navigate("Home")}
+        onPress={() => navigation.navigate("Other")}
       />
     </View>
   );
