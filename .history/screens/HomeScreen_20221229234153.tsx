@@ -12,6 +12,10 @@ export default function HomeScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home Screen</Text>
+      <Button
+        title="Go to Other Screen"
+        onPress={() => navigation.navigate("Other")}
+      />
 
       <CustomButton
         title="Go to Other Screen"

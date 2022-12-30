@@ -1,0 +1,19 @@
+import React from "react";
+import { View, Text, Button } from "react-native";
+import { NavigationStackProp } from "react-navigation-stack";
+
+interface Props {
+  navigation: NavigationStackProp<{}>;
+}
+
+export default function LoginScreen({ navigation }: Props) {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Login Screen</Text>
+      <Button
+        title="Go to Other Screen"
+        onPress={() => navigation.navigate("Other")}
+      />
+    </View>
+  );
+}

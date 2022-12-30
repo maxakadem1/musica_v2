@@ -12,14 +12,17 @@ export default function HomeScreen({ navigation }: Props) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home Screen</Text>
-
-      <CustomButton
+      <Button
         title="Go to Other Screen"
         onPress={() => navigation.navigate("Other")}
       />
       <CustomButton
         title="Back to Login Screen"
         onPress={() => navigation.navigate("Login")}
+      />
+      <CustomButton
+        title="Go to Other Screen"
+        onPress={() => navigation.navigate("Other")}
       />
     </View>
   );

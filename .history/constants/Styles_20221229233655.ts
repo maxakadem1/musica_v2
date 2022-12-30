@@ -26,14 +26,13 @@ export default StyleSheet.create({
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 5,
-    margin: 10,
   },
   buttonText: {
     color: "#000",
     fontSize: fonts.medium,
   },
   text: {
-    color: colors.secondary,
+    color: "#000",
     fontSize: fonts.large,
   },
   input: {

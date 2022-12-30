@@ -18,7 +18,7 @@ export const fonts = {
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#272838",
+    backgroundColor: "#000",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -26,10 +26,9 @@ export default StyleSheet.create({
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 5,
-    margin: 10,
   },
   buttonText: {
-    color: "#000",
+    color: "#fff",
     fontSize: fonts.medium,
   },
   text: {

@@ -26,7 +26,7 @@ export default StyleSheet.create({
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 5,
-    margin: 10,
+    paddingVertical: 10,
   },
   buttonText: {
     color: "#000",
