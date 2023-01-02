@@ -36,12 +36,6 @@ export default StyleSheet.create({
     color: colors.secondary,
     fontSize: fonts.large,
   },
-  headerText: {
-    color: colors.primary,
-    fontSize: fonts.large,
-    marginBottom: 20,
-    fontFamily: "sans-serif-condensed",
-  },
   input: {
     width: 200,
     height: 44,
@@ -49,6 +43,5 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: "black",
     marginBottom: 10,
-    backgroundColor: "#fff",
   },
 });

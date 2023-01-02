@@ -1,5 +1,9 @@
 import { StyleSheet } from "react-native";
 
+export const fontTypes = {
+  bold: "Montserrat-Bold",
+};
+
 export const colors = {
   primary: "yellow",
   secondary: "#6c757d",
@@ -40,7 +44,7 @@ export default StyleSheet.create({
     color: colors.primary,
     fontSize: fonts.large,
     marginBottom: 20,
-    fontFamily: "sans-serif-condensed",
+    fontFamily: fontTypes.bold,
   },
   input: {
     width: 200,

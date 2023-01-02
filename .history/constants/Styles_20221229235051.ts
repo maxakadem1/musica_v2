@@ -39,8 +39,6 @@ export default StyleSheet.create({
   headerText: {
     color: colors.primary,
     fontSize: fonts.large,
-    marginBottom: 20,
-    fontFamily: "sans-serif-condensed",
   },
   input: {
     width: 200,

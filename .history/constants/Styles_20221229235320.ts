@@ -40,7 +40,7 @@ export default StyleSheet.create({
     color: colors.primary,
     fontSize: fonts.large,
     marginBottom: 20,
-    fontFamily: "sans-serif-condensed",
+    fontFamily: "nunito",
   },
   input: {
     width: 200,
