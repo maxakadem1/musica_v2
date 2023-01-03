@@ -23,22 +23,20 @@ export default function OtherScreen({ navigation }: Props) {
   return (
     <View style={styles.loginContainer}>
       <Text style={styles.text}>Register Screen</Text>
-      <View style={styles.loginInputs}>
-        <TextInput
-          style={styles.input}
-          placeholder="Email"
-          onChangeText={(text) => setEmail(text)}
-          value={email}
-        />
-        <TextInput
-          style={styles.input}
-          placeholder="Password"
-          secureTextEntry={true}
-          onChangeText={(text) => setPassword(text)}
-          value={password}
-        />
-        <LoginButton title="register" onPress={handleRegister} />
-      </View>
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        onChangeText={(text) => setEmail(text)}
+        value={email}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Password"
+        secureTextEntry={true}
+        onChangeText={(text) => setPassword(text)}
+        value={password}
+      />
+      <LoginButton title="register" onPress={handleRegister} />
     </View>
   );
 }

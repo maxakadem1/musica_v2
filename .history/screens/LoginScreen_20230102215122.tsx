@@ -1,28 +1,30 @@
 import React, { useState } from "react";
-import { View, Text, Button } from "react-native";
+import { View, TextInput, Button, StyleSheet, Text } from "react-native";
 import { NavigationStackProp } from "react-navigation-stack";
 import styles from "../constants/Styles";
-import { TextInput } from "react-native-gesture-handler";
 import LoginButton from "../components/LoginButton";
+import RegisterButton from "../components/RegisterButton";
 
 interface Props {
   navigation: NavigationStackProp<{}>;
 }
 
-export default function OtherScreen({ navigation }: Props) {
+export default function LoginScreen({ navigation }: Props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleRegister = async () => {
+  const handleLogin = async () => {
     // Send a request to your server to authenticate the user
 
     // Navigate to the Home screen
     navigation.navigate("Home");
   };
 
+  const handleRegister = async () => {};
+
   return (
     <View style={styles.loginContainer}>
-      <Text style={styles.text}>Register Screen</Text>
+      <Text style={styles.headerText}>MUSICA</Text>
       <View style={styles.loginInputs}>
         <TextInput
           style={styles.input}
@@ -37,7 +39,8 @@ export default function OtherScreen({ navigation }: Props) {
           onChangeText={(text) => setPassword(text)}
           value={password}
         />
-        <LoginButton title="register" onPress={handleRegister} />
+        <LoginButton title="login" onPress={handleLogin} />
+        <RegisterButton title="register" onPress={handleRegister} />
       </View>
     </View>
   );

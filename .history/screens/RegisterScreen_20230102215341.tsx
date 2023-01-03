@@ -37,8 +37,8 @@ export default function OtherScreen({ navigation }: Props) {
           onChangeText={(text) => setPassword(text)}
           value={password}
         />
-        <LoginButton title="register" onPress={handleRegister} />
       </View>
+      <LoginButton title="register" onPress={handleRegister} />
     </View>
   );
 }
