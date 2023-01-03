@@ -3,6 +3,7 @@ import { View, TextInput, Button, StyleSheet, Text } from "react-native";
 import { NavigationStackProp } from "react-navigation-stack";
 import styles from "../constants/Styles";
 import LoginButton from "../components/LoginButton";
+import RegisterButton from "../components/RegisterButton";
 
 interface Props {
   navigation: NavigationStackProp<{}>;
@@ -18,6 +19,11 @@ export default function LoginScreen({ navigation }: Props) {
     // Navigate to the Home screen
     navigation.navigate("Home");
   };
+
+  const handleRegister = async() =>
+  {
+
+  }
 
   return (
     <View style={styles.container}>
@@ -36,6 +42,7 @@ export default function LoginScreen({ navigation }: Props) {
         value={password}
       />
       <LoginButton title="Login" onPress={handleLogin} />
+      <RegisterButton title="register" onPress = {handleRegister}/>
     </View>
   );
 }

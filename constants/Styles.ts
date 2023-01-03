@@ -22,14 +22,25 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  button: {
+  loginButton: {
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 15,
     margin: 10,
   },
-  buttonText: {
+  registerButton:
+  {
+    backgroundColor: colors.secondary,
+    borderRadius: 15,
+    padding: 10,
+    margin: 10,
+  },
+  loginText: {
     color: "#000",
+    fontSize: fonts.medium,
+  },
+  registerText: {
+    color: "#fff",
     fontSize: fonts.medium,
   },
   text: {

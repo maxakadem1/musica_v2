@@ -7,12 +7,12 @@ interface Props {
   title: string;
 }
 
-const LoginButton: React.FC<Props> = ({ onPress, title }) => {
+const RegisterButton: React.FC<Props> = ({ onPress, title }) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.loginButton}>
-      <Text style={styles.loginText}>{title}</Text>
+    <TouchableOpacity onPress={onPress} style={styles.registerButton}>
+      <Text style={styles.registerText}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
-export default LoginButton;
+export default RegisterButton;
