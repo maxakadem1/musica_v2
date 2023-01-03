@@ -1,3 +1,4 @@
+import { cloneElement } from "react";
 import { StyleSheet } from "react-native";
 
 export const colors = {
@@ -22,26 +23,33 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  loginContainer: {
+    flex: 1,
+    backgroundColor: "#272838",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   loginButton: {
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 15,
-    margin: 10,
   },
   registerButton:
   {
     backgroundColor: colors.secondary,
     borderRadius: 15,
     padding: 10,
-    margin: 10,
+    marginTop: 10,
   },
   loginText: {
     color: "#000",
     fontSize: fonts.medium,
+    textAlign: "center"
   },
   registerText: {
     color: "#fff",
     fontSize: fonts.medium,
+    textAlign: "center"
   },
   text: {
     color: colors.secondary,
@@ -54,13 +62,11 @@ export default StyleSheet.create({
     fontFamily: "sans-serif-condensed",
   },
   input: {
-    width: 200,
-    height: 44,
     padding: 10,
     borderWidth: 1,
     borderColor: "black",
     marginBottom: 10,
     backgroundColor: "#fff",
-    borderRadius: 15,
+    borderRadius: 15
   },
 });

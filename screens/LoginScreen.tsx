@@ -26,23 +26,25 @@ export default function LoginScreen({ navigation }: Props) {
   }
 
   return (
-    <View style={styles.container}>
+    <View style={styles.loginContainer}>
       <Text style={styles.headerText}>MUSICA</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        onChangeText={(text) => setEmail(text)}
-        value={email}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        secureTextEntry={true}
-        onChangeText={(text) => setPassword(text)}
-        value={password}
-      />
-      <LoginButton title="Login" onPress={handleLogin} />
-      <RegisterButton title="register" onPress = {handleRegister}/>
+      <View>
+        <TextInput
+          style={styles.input}
+          placeholder="Email"
+          onChangeText={(text) => setEmail(text)}
+          value={email}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Password"
+          secureTextEntry={true}
+          onChangeText={(text) => setPassword(text)}
+          value={password}
+        />
+        <LoginButton title="Login" onPress={handleLogin} />
+        <RegisterButton title="Register" onPress = {handleRegister}/>
+      </View>
     </View>
   );
 }
