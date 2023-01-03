@@ -1,5 +1,6 @@
 import { cloneElement } from "react";
 import { StyleSheet } from "react-native";
+import { Dimensions } from "react-native";
 
 export const colors = {
   primary: "yellow",
@@ -29,13 +30,16 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  loginInputs:
+  {
+    width: Dimensions.get("window").width * 0.6,
+  },
   loginButton: {
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 15,
   },
-  registerButton:
-  {
+  registerButton: {
     backgroundColor: colors.secondary,
     borderRadius: 15,
     padding: 10,
