@@ -50,6 +50,5 @@ export default StyleSheet.create({
     borderColor: "black",
     marginBottom: 10,
     backgroundColor: "#fff",
-    borderRadius: 15,
   },
 });

@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 import { NavigationStackProp } from "react-navigation-stack";
-import LoginButton from "../components/LoginButton";
+import CustomButton from "../components/LoginButton";
 import styles from "../constants/Styles";
 
 interface Props {
@@ -13,11 +13,11 @@ export default function HomeScreen({ navigation }: Props) {
     <View style={styles.container}>
       <Text style={styles.text}>Home Screen</Text>
 
-      <LoginButton
+      <CustomButton
         title="Go to Other Screen"
         onPress={() => navigation.navigate("Other")}
       />
-      <LoginButton
+      <CustomButton
         title="Back to Login Screen"
         onPress={() => navigation.navigate("Login")}
       />
